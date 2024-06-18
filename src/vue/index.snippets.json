@@ -1,0 +1,778 @@
+{
+    "vue2Init": {
+        "prefix": ["vue2Init"],
+        "body": [
+            "<template>",
+            "\t<div></div>",
+            "</template>",
+            "<script>",
+            "export default {",
+            "\tname: '$1',",
+            "\tprops: {",
+            "\t\t$2",
+            "\t},",
+            "\tdata() {",
+            "\t\treturn {",
+            "\t\t\t$3",
+            "\t\t};",
+            "\t},",
+            "\tmethods: {},",
+            "};",
+            "</script>",
+            "<style scoped>",
+            "</style>"
+        ],
+        "description": "Init for Vue File with CSS",
+        "scope": "vue"
+    },
+    "vue2InitSass": {
+        "prefix": ["vue2InitSass"],
+        "body": [
+            "<template>",
+            "\t<div></div>",
+            "</template>",
+            "<script>",
+            "export default {",
+            "\tname: '$1',",
+            "\tprops: {",
+            "\t\t$2",
+            "\t},",
+            "\tdata() {",
+            "\t\treturn {",
+            "\t\t\t$3",
+            "\t\t};",
+            "\t},",
+            "\tmethods: {},",
+            "};",
+            "</script>",
+            "<style scoped lang=\"scss\">",
+            "</style>"
+        ],
+        "description": "Init for Vue File with SCSS",
+        "scope": "vue"
+    },
+    "vue2InitLess": {
+        "prefix": ["vue2InitLess"],
+        "body": [
+            "<template>",
+            "\t<div></div>",
+            "</template>",
+            "<script>",
+            "export default {",
+            "\tname: '$1',",
+            "\tprops: {",
+            "\t\t$2",
+            "\t},",
+            "\tdata() {",
+            "\t\treturn {",
+            "\t\t\t$3",
+            "\t\t};",
+            "\t},",
+            "\tmethods: {},",
+            "};",
+            "</script>",
+            "<style scoped lang=\"less\">",
+            "</style>"
+        ],
+        "description": "Init for Vue File with Less",
+        "scope": "vue"
+    },
+    "vue2InitStylus": {
+        "prefix": ["vue2InitStylus"],
+        "body": [
+            "<template>",
+            "\t<div></div>",
+            "</template>",
+            "<script>",
+            "export default {",
+            "\tname: '$1',",
+            "\tprops: {",
+            "\t\t$2",
+            "\t},",
+            "\tdata() {",
+            "\t\treturn {",
+            "\t\t\t$3",
+            "\t\t};",
+            "\t},",
+            "\tmethods: {},",
+            "};",
+            "</script>",
+            "<style scoped lang=\"styl\">",
+            "</style>"
+        ],
+        "description": "Init for Vue File with stylus",
+        "scope": "vue"
+    },
+    "vue3Init": {
+        "prefix": ["vue3Init"],
+        "body": [
+            "<template>",
+            "\t",
+            "</template>",
+            "<script>",
+            "export default {",
+            "\tname: '$1',",
+            "\tprops: {",
+            "\t\t$2",
+            "\t},",
+            "\tsetup(props, { emit, expose }) {",
+            "\t\t$3",
+            "\t}",
+            "}",
+            "</script>",
+            "<style scoped>",
+            "</style>"
+        ],
+        "scope": "vue",
+        "description": "Init for Vue3 File with CSS"
+    },
+    "vue3InitSass": {
+        "prefix": ["vue3Init"],
+        "body": [
+            "<template>",
+            "\t",
+            "</template>",
+            "<script>",
+            "export default {",
+            "\tname: '$1',",
+            "\tprops: {",
+            "\t\t$2",
+            "\t},",
+            "\tsetup(props, { emit, expose }) {",
+            "\t\t$3",
+            "\t}",
+            "}",
+            "</script>",
+            "<style scoped lang=\"scss\">",
+            "</style>"
+        ],
+        "scope": "vue",
+        "description": "Init for Vue3 File with SCSS"
+    },
+    "vue3InitLess": {
+        "prefix": ["vue3InitLess"],
+        "body": [
+            "<template>",
+            "\t",
+            "</template>",
+            "<script>",
+            "export default {",
+            "\tname: '$1',",
+            "\tprops: {",
+            "\t\t$2",
+            "\t},",
+            "\tsetup(props, { emit, expose }) {",
+            "\t\t$3",
+            "\t}",
+            "}",
+            "</script>",
+            "<style scoped lang=\"less\">",
+            "</style>"
+        ],
+        "scope": "vue"
+    },
+    "vue3InitStylus": {
+        "prefix": ["vue3InitStylus"],
+        "body": [
+            "<template>",
+            "\t",
+            "</template>",
+            "<script>",
+            "export default {",
+            "\tname: '$1',",
+            "\tprops: {",
+            "\t\t$2",
+            "\t},",
+            "\tsetup(props, { emit, expose }) {",
+            "\t\t$3",
+            "\t}",
+            "}",
+            "</script>",
+            "<style scoped lang=\"styl\">",
+            "</style>"
+        ],
+        "scope": "vue"
+    },
+    "vue3InitTs": {
+        "prefix": ["vue3InitTs"],
+        "body": [
+            "<template>",
+            "\t",
+            "</template>",
+            "<script lang=\"ts\">",
+            "export default {",
+            "\tname: '$1',",
+            "\tprops: {",
+            "\t\t$2",
+            "\t},",
+            "\tsetup(props, { emit, expose }) {",
+            "\t\t$3",
+            "\t}",
+            "}",
+            "</script>",
+            "<style scoped>",
+            "</style>"
+        ],
+        "scope": "vue"
+    },
+    "vue3InitTsSass": {
+        "prefix": ["vue3InitTsSass"],
+        "body": [
+            "<template>",
+            "\t",
+            "</template>",
+            "<script lang=\"ts\">",
+            "export default {",
+            "\tname: '$1',",
+            "\tprops: {",
+            "\t\t$2",
+            "\t},",
+            "\tsetup(props, { emit, expose }) {",
+            "\t\t$3",
+            "\t}",
+            "}",
+            "</script>",
+            "<style scoped lang=\"scss\">",
+            "</style>"
+        ],
+        "scope": "vue"
+    },
+    "vue3InitTsLess": {
+        "prefix": ["vue3InitTsLess"],
+        "body": [
+            "<template>",
+            "\t",
+            "</template>",
+            "<script lang=\"ts\">",
+            "export default {",
+            "\tname: '$1',",
+            "\tprops: {",
+            "\t\t$2",
+            "\t},",
+            "\tsetup(props, { emit, expose }) {",
+            "\t\t$3",
+            "\t}",
+            "}",
+            "</script>",
+            "<style scoped lang=\"less\">",
+            "</style>"
+        ],
+        "scope": "vue"
+    },
+    "vue3InitTsStylus": {
+        "prefix": ["vue3InitTsStylus"],
+        "body": [
+            "<template>",
+            "\t",
+            "</template>",
+            "<script lang=\"ts\">",
+            "export default {",
+            "\tname: '$1',",
+            "\tprops: {",
+            "\t\t$2",
+            "\t},",
+            "\tsetup(props, { emit, expose }) {",
+            "\t\t$3",
+            "\t}",
+            "}",
+            "</script>",
+            "<style scoped lang=\"styl\">",
+            "</style>"
+        ],
+        "scope": "vue"
+    },
+    "vue3InitSetup": {
+        "prefix": ["vue3InitSetup"],
+        "body": ["<template>", "\t", "</template>", "<script setup>", "\t$1", "</script>", "<style scoped>", "</style>"],
+        "scope": "vue"
+    },
+    "vue3InitSetupSass": {
+        "prefix": ["vue3InitSetupSass"],
+        "body": ["<template>", "\t", "</template>", "<script setup>", "\t$1", "</script>", "<style scoped lang=\"scss\">", "</style>"],
+        "scope": "vue"
+    },
+    "vue3InitSetupLess": {
+        "prefix": ["vue3InitSetupLess"],
+        "body": ["<template>", "\t", "</template>", "<script setup>", "\t$1", "</script>", "<style scoped lang=\"less\">", "</style>"],
+        "scope": "vue"
+    },
+    "vue3InitSetupStylus": {
+        "prefix": ["vue3InitSetupStylus"],
+        "body": ["<template>", "\t", "</template>", "<script setup>", "\t$1", "</script>", "<style scoped lang=\"styl\">", "</style>"],
+        "scope": "vue"
+    },
+    "vue3InitSetupTs": {
+        "prefix": ["vue3InitSetup"],
+        "body": ["<template>", "\t", "</template>", "<script setup lang=\"ts\">", "\t$1", "</script>", "<style scoped>", "</style>"],
+        "scope": "vue"
+    },
+    "vue3InitSetupJsx": {
+        "prefix": ["vue3InitSetupJsx"],
+        "body": [
+            "<template></template>",
+            "<script lang=\"jsx\">",
+            "export default {",
+            "\tname: '$1',",
+            "\tprops: {$2},",
+            "\tsetup(props, { emit, expose }) {",
+            "\t\treturn () => <div>$3</div>;",
+            "\t},",
+            "}",
+            "</script>",
+            "<style scoped></style>"
+        ],
+        "scope": "vue"
+    },
+    "vue3InitSetupTsx": {
+        "prefix": ["vue3InitSetupTsx"],
+        "body": [
+            "<template></template>",
+            "<script lang=\"tsx\">",
+            "export default {",
+            "\tname: '$1',",
+            "\tprops: {$2},",
+            "\tsetup(props, { emit, expose }) {",
+            "\t\treturn () => <div>$3</div>;",
+            "\t},",
+            "}",
+            "</script>",
+            "<style scoped></style>"
+        ],
+        "scope": "vue"
+    },
+    "template": {
+        "prefix": ["template"],
+        "body": ["<template>", "\t$1", "</template>"],
+        "scope": "vue"
+    },
+    "templateLang": {
+        "prefix": ["templateLang"],
+        "body": ["<template lang=\"${1:lang}\">", "\t$2", "</template>"],
+        "scope": "vue"
+    },
+    "style": {
+        "prefix": ["style"],
+        "body": ["<style>", "$1", "</style>"],
+        "scope": "vue"
+    },
+    "styleLang": {
+        "prefix": ["styleLang"],
+        "body": ["<style lang=\"${1:lang}\">", "$2", "</style>"],
+        "scope": "vue"
+    },
+    "styleWithSass": {
+        "prefix": ["styleWithSass"],
+        "body": ["<style lang=\"scss\">", "$2", "</style>"],
+        "scope": "vue"
+    },
+    "styleWithLess": {
+        "prefix": ["styleWithLess"],
+        "body": ["<style lang=\"less\">", "$2", "</style>"],
+        "scope": "vue"
+    },
+    "styleWithStyl": {
+        "prefix": ["styleWithStyl"],
+        "body": ["<style lang=\"styl\">", "$2", "</style>"],
+        "scope": "vue"
+    },
+    "styleWithModule": {
+        "prefix": ["styleWithModule"],
+        "body": ["<style module>", "$2", "</style>"],
+        "scope": "vue"
+    },
+    "script": {
+        "prefix": ["script"],
+        "body": ["<script>", "$1", "</script>"],
+        "scope": "vue"
+    },
+    "scriptLang": {
+        "prefix": ["scriptLang"],
+        "body": ["<script lang=\"${1:lang}\">", "$2", "</script>"],
+        "scope": "vue"
+    },
+    "scriptWithTs": {
+        "prefix": ["scriptWithTs"],
+        "body": ["<script lang=\"ts\">", "$2", "</script>"],
+        "scope": "vue"
+    },
+    "scriptWithJsx": {
+        "prefix": ["scriptWithJsx"],
+        "body": ["<script lang=\"jsx\">", "$2", "</script>"],
+        "scope": "vue"
+    },
+    "scriptWithTsx": {
+        "prefix": ["scriptWithTsx"],
+        "body": ["<script lang=\"tsx\">", "$2", "</script>"],
+        "scope": "vue"
+    },
+    "routerLink": {
+        "prefix": ["routerLink"],
+        "body": ["<router-link :to=\"${1:path}\" />"],
+        "scope": "vue"
+    },
+    "routerView": {
+        "prefix": ["routerView"],
+        "body": ["<router-view />"],
+        "scope": "vue"
+    },
+    "transition": {
+        "prefix": ["transition"],
+        "body": ["<transition>", "$1", "</transition>"],
+        "scope": "vue"
+    },
+    "transitionGroup": {
+        "prefix": ["transitionGroup"],
+        "body": ["<transition-group>", "$1", "</transition-group>"],
+        "scope": "vue"
+    },
+    "enterClassName": {
+        "prefix": ["enterClassName"],
+        "body": ["enter-class=\"${1:className}\""],
+        "scope": "vue"
+    },
+    "enterFromClassName": {
+        "prefix": ["enterFromClassName"],
+        "body": ["enter-to-class=\"${1:className}\""],
+        "scope": "vue"
+    },
+    "enterActiveClassName": {
+        "prefix": ["enterActiveClassName"],
+        "body": ["enter-active-class=\"${1:className}\""],
+        "scope": "vue"
+    },
+    "enterToClassName": {
+        "prefix": ["enterToClassName"],
+        "body": ["enter-to-class=\"${1:className}\""],
+        "scope": "vue"
+    },
+    "appearClassName": {
+        "prefix": ["appearClassName"],
+        "body": ["appear-class=\"${1:className}\""],
+        "scope": "vue"
+    },
+    "appearFromClassName": {
+        "prefix": ["appearFromClassName"],
+        "body": ["appear-to-class=\"${1:className}\""],
+        "scope": "vue"
+    },
+    "appearActiveClassName": {
+        "prefix": ["appearActiveClassName"],
+        "body": ["appear-active-class=\"${1:className}\""],
+        "scope": "vue"
+    },
+    "appearToClassName": {
+        "prefix": ["appearToClassName"],
+        "body": ["appear-to-class=\"${1:className}\""],
+        "scope": "vue"
+    },
+    "leaveClassName": {
+        "prefix": ["leaveClassName"],
+        "body": ["leave-class=\"${1:className}\""],
+        "scope": "vue"
+    },
+    "leaveFromClassName": {
+        "prefix": ["leaveFromClassName"],
+        "body": ["leave-to-class=\"${1:className}\""],
+        "scope": "vue"
+    },
+    "leaveActiveClassName": {
+        "prefix": ["leaveActiveClassName"],
+        "body": ["leave-active-class=\"${1:className}\""],
+        "scope": "vue"
+    },
+    "leaveToClassName": {
+        "prefix": ["leaveToClassName"],
+        "body": ["leave-to-class=\"${1:className}\""],
+        "scope": "vue"
+    },
+    "beforeEnterEvent": {
+        "prefix": ["beforeEnterEvent"],
+        "body": ["@before-enter=\"${1:eventName}\""],
+        "scope": "vue"
+    },
+    "beforeLeaveEvent": {
+        "prefix": ["beforeLeaveEvent"],
+        "body": ["@before-leave=\"${1:eventName}\""],
+        "scope": "vue"
+    },
+    "beforeAppearEvent": {
+        "prefix": ["beforeAppearEvent"],
+        "body": ["@before-appear=\"${1:eventName}\""],
+        "scope": "vue"
+    },
+    "afterEnterEvent": {
+        "prefix": ["afterEnterEvent"],
+        "body": ["@after-enter=\"${1:eventName}\""],
+        "scope": "vue"
+    },
+    "afterLeaveEvent": {
+        "prefix": ["afterLeaveEvent"],
+        "body": ["@after-leave=\"${1:eventName}\""],
+        "scope": "vue"
+    },
+    "afterAppearEvent": {
+        "prefix": ["afterAppearEvent"],
+        "body": ["@after-appear=\"${1:eventName}\""],
+        "scope": "vue"
+    },
+    "enterCancelledEvent": {
+        "prefix": ["enterCancelledEvent"],
+        "body": ["@enter-cancelled=\"${1:eventName}\""],
+        "scope": "vue"
+    },
+    "leaveCancelledEvent": {
+        "prefix": ["leaveCancelledEvent"],
+        "body": ["@leave-cancelled=\"${1:eventName}\""],
+        "scope": "vue"
+    },
+    "appearCancelledEvent": {
+        "prefix": ["appearCancelledEvent"],
+        "body": ["@appear-cancelled=\"${1:eventName}\""],
+        "scope": "vue"
+    },
+    "clickEvent": {
+        "prefix": ["clickEvent"],
+        "body": ["@click=\"${1:eventName}\""],
+        "scope": "vue"
+    },
+    "changeEvent": {
+        "prefix": ["changeEvent"],
+        "body": ["@change=\"${1:eventName}\""],
+        "scope": "vue"
+    },
+    "inputEvent": {
+        "prefix": ["inputEvent"],
+        "body": ["@input=\"${1:eventName}\""],
+        "scope": "vue"
+    },
+    "keepAlive": {
+        "prefix": ["keepAlive"],
+        "body": ["<keep-alive>", "$1", "</keep-alive>"],
+        "scope": "vue"
+    },
+    "keepAliveWithAll": {
+        "prefix": ["keepAliveWithAll"],
+        "body": ["<keep-alive :include=\"${1:include}\" :exclude=\"${2:exclude}\" :max=\"$3\">", "$4", "</keep-alive>"],
+        "scope": "vue"
+    },
+    "exclude": {
+        "prefix": ["exclude"],
+        "body": [":exclude=\"${1:exclude}\""],
+        "scope": "vue"
+    },
+    "include": {
+        "prefix": ["include"],
+        "body": [":include=\"${1:include}\""],
+        "scope": "vue"
+    },
+    "teleport": {
+        "prefix": ["teleport"],
+        "body": ["<teleport to=\"${1:path}\">", "$2", "</teleport>"],
+        "scope": "vue"
+    },
+    "suspense": {
+        "prefix": ["suspense"],
+        "body": ["<suspense>", "\t<template #fallback>", "\t\t$1", "\t</template>", "\t\t$2", "</suspense>"],
+        "scope": "vue"
+    },
+    "component": {
+        "prefix": ["component"],
+        "body": ["<component :is=\"${1:is}\"/>"],
+        "scope": "vue"
+    },
+    "slot": {
+        "prefix": ["slot"],
+        "body": ["<slot />"],
+        "scope": "vue"
+    },
+    "className": {
+        "prefix": ["className"],
+        "body": ["class=\"\""],
+        "scope": "vue"
+    },
+    "slotScoped": {
+        "prefix": ["slotScoped"],
+        "body": ["<slot :name=\"$1\" />"],
+        "scope": "vue"
+    },
+    "vBind": {
+        "prefix": ["vBind"],
+        "body": [":${1:key}=\"${2:value}\""],
+        "scope": "vue"
+    },
+    "vBindObjClass": {
+        "prefix": ["vBindObjClass"],
+        "body": [":class=\"{ ${1:key}: ${2:value}, }\""],
+        "scope": "vue"
+    },
+    "vBindStrClass": {
+        "prefix": ["vBindStrClass"],
+        "body": [":class=\"'${1:className}'\""],
+        "scope": "vue"
+    },
+    "vBindArrClass": {
+        "prefix": ["vBindArrClass"],
+        "body": [":class=\"[ '${1:className}', ]\""],
+        "scope": "vue"
+    },
+    "vBindStyle": {
+        "prefix": ["vBindStyle"],
+        "body": [":style=\"{ ${1:key}: ${2:value}, }\""],
+        "scope": "vue"
+    },
+    "vBindProps": {
+        "prefix": ["vBindProps"],
+        "body": ["v-bind=\"${1:props}\""],
+        "scope": "vue"
+    },
+    "vBindAttrs": {
+        "prefix": ["vBindAttrs"],
+        "body": ["v-bind=\"\\$attrs\""],
+        "scope": "vue"
+    },
+    "vModel": {
+        "prefix": ["vModel"],
+        "body": ["v-model=\"${1:value}\""],
+        "scope": "vue"
+    },
+    "vModelLazy": {
+        "prefix": ["vModel.lazy"],
+        "body": ["v-model.lazy=\"${1:value}\""],
+        "scope": "vue"
+    },
+    "vModelBindKey": {
+        "prefix": ["vModelBindKey"],
+        "body": ["v-model:${1:key}=\"${2:value}\""],
+        "scope": "vue"
+    },
+    "vModelNumber": {
+        "prefix": ["vModelNumber"],
+        "body": ["v-model.number=\"${1:value}\""],
+        "scope": "vue"
+    },
+    "vModelTrim": {
+        "prefix": ["vModelTrim"],
+        "body": ["v-model.trim=\"${1:value}\""],
+        "scope": "vue"
+    },
+    "vText": {
+        "prefix": ["vText"],
+        "body": ["v-text=\"${1:text}\""],
+        "scope": "vue"
+    },
+    "vHtml": {
+        "prefix": ["vHtml"],
+        "body": ["v-html=\"${1:html}\""],
+        "scope": "vue"
+    },
+    "vShow": {
+        "prefix": ["vShow"],
+        "body": ["v-show=\"${1:show}\""],
+        "scope": "vue"
+    },
+    "vif": {
+        "prefix": ["vif"],
+        "body": ["v-if=\"${1:condition}\""],
+        "scope": "vue"
+    },
+    "vElseIf": {
+        "prefix": ["vElseIf"],
+        "body": ["v-else-if=\"${1:condition}\""],
+        "scope": "vue"
+    },
+    "vElse": {
+        "prefix": ["vElse"],
+        "body": ["v-else"],
+        "scope": "vue"
+    },
+    "vFor": {
+        "prefix": ["vFor", "vForIn"],
+        "body": ["v-for=\"(${1:item}, ${2:index}) in ${3:list}\""],
+        "scope": "vue"
+    },
+    "vForOf": {
+        "prefix": ["vForOf"],
+        "body": ["v-for=\"(${1:item}, ${2:index}) of ${3:list}\""],
+        "scope": "vue"
+    },
+    "vSlot": {
+        "prefix": ["vSlot"],
+        "body": ["<template #${1:slotName}>", "$2", "</template>"],
+        "scope": "vue"
+    },
+    "vSlotScoped": {
+        "prefix": ["vSlotScoped"],
+        "body": ["<template #${1:slotName}=\"${2:bindings}\">", "$3", "</template>"],
+        "scope": "vue"
+    },
+    "vSlotScopedProp": {
+        "prefix": ["vSlotScopedProp"],
+        "body": ["<template #${1:slotName}=\"${2:bindings}\">", "$3", "</template>"],
+        "scope": "vue"
+    },
+    "vSlotProp": {
+        "prefix": ["vSlotProp"],
+        "body": ["<template #=\"${1:bindings}\">", "$2", "</template>"],
+        "scope": "vue"
+    },
+    "vSlotDynamicName": {
+        "prefix": ["vSlotDynamicName"],
+        "body": ["<template #[${1:slotName}]>", "$2", "</template>"],
+        "scope": "vue"
+    },
+    "vSlotDynamicNameScoped": {
+        "prefix": ["vSlotDynamicNameScoped"],
+        "body": ["<template #[${1:slotName}]=\"${1:bindings}\">", "$2", "</template>"],
+        "scope": "vue"
+    },
+    "vPre": {
+        "prefix": ["vPre"],
+        "body": ["v-pre"],
+        "scope": "vue"
+    },
+    "vOnce": {
+        "prefix": ["vOnce"],
+        "body": ["v-once"],
+        "scope": "vue"
+    },
+    "vMemo": {
+        "prefix": ["vMemo"],
+        "body": ["v-memo=\"${1:value}\""],
+        "scope": "vue"
+    },
+    "vCloak": {
+        "prefix": ["vCloak"],
+        "body": ["v-cloak"],
+        "scope": "vue"
+    },
+    "isBind": {
+        "prefix": ["isBind"],
+        "body": [":is=\"${1:is}\""],
+        "scope": "vue"
+    },
+    "is": {
+        "prefix": ["isBind"],
+        "body": ["is=\"${1:is}\""],
+        "scope": "vue"
+    },
+    "keyBind": {
+        "prefix": ["keyBind"],
+        "body": [":key=\"${1:key}\""],
+        "scope": "vue"
+    },
+    "key": {
+        "prefix": ["key"],
+        "body": ["key=\"${1:key}\""],
+        "scope": "vue"
+    },
+    "ref": {
+        "prefix": ["ref"],
+        "body": ["ref=\"${1:ref}\""],
+        "scope": "vue"
+    },
+    "name": {
+        "prefix": ["name"],
+        "body": ["name=\"${1:name}\""],
+        "scope": "vue"
+    }
+}

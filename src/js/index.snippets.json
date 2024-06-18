@@ -1,0 +1,2355 @@
+{
+	"constObj": {
+		"prefix": [
+			"constObj"
+		],
+		"body": [
+			"const ${1:name} = { ${2:key}: ${3:value}, };"
+		],
+		"description": "Declare an object literal constant",
+		"scope": "javascript"
+	},
+	"letObj": {
+		"prefix": [
+			"letObj"
+		],
+		"body": [
+			"let ${1:name} = { ${2:key}: ${3:value}, };"
+		],
+		"description": "Declare an object literal variable",
+		"scope": "javascript"
+	},
+	"const": {
+		"prefix": [
+			"const"
+		],
+		"body": [
+			"const ${1:name} = ${2:value};"
+		],
+		"description": "Declare an object literal constant",
+		"scope": "javascript"
+	},
+	"let": {
+		"prefix": [
+			"let"
+		],
+		"body": [
+			"let ${1:name} = ${2:value};"
+		],
+		"description": "Declare an object literal constant",
+		"scope": "javascript"
+	},
+	"setInterval": {
+		"prefix": [
+			"setInterval"
+		],
+		"body": [
+			"setInterval(() => {",
+			"\t$1",
+			"}, ${2:delay});"
+		],
+		"description": "Declare an object literal constant",
+		"scope": "javascript"
+	},
+	"setTimeout": {
+		"prefix": [
+			"setTimeout"
+		],
+		"body": [
+			"setTimeout(() => {",
+			"\t$1",
+			"}, ${2:delay});"
+		],
+		"description": "Declare an object literal constant",
+		"scope": "javascript"
+	},
+	"clearInterval": {
+		"prefix": [
+			"clearInterval"
+		],
+		"body": [
+			"clearInterval(${1:id})"
+		],
+		"description": "Declare an object literal constant",
+		"scope": "javascript"
+	},
+	"clearTimeout": {
+		"prefix": [
+			"clearTimeout"
+		],
+		"body": [
+			"clearTimeout(${1:id})"
+		],
+		"description": "Declare an object literal constant",
+		"scope": "javascript"
+	},
+	"objProp": {
+		"prefix": [
+			"objProp"
+		],
+		"body": [
+			"${1:key}: ${2:value},"
+		],
+		"scope": "javascript"
+	},
+	"objMed": {
+		"prefix": [
+			"objMed"
+		],
+		"body": [
+			"${1:key}(${1:args}) { ",
+			"\t$2",
+			" },"
+		],
+		"scope": "javascript"
+	},
+	"reObjMed": {
+		"prefix": [
+			"reObjMed"
+		],
+		"body": [
+			"${1:key}(${1:args}) { ",
+			"\t$2",
+			"\t return ${3:returnValue};",
+			" },"
+		],
+		"scope": "javascript"
+	},
+	"objAsyncMed": {
+		"prefix": [
+			"objAsyncMed"
+		],
+		"body": [
+			"async ${1:key}(${1:args}) { ",
+			"\t$2",
+			" },"
+		],
+		"scope": "javascript"
+	},
+	"reObjAsyncMed": {
+		"prefix": [
+			"reObjAsyncMed"
+		],
+		"body": [
+			"async ${1:key}(${1:args}) { ",
+			"\t$2",
+			"\t return ${3:returnValue};",
+			" },"
+		],
+		"scope": "javascript"
+	},
+	"lefArr": {
+		"prefix": [
+			"lefArr"
+		],
+		"body": [
+			"let ${1:name} = [ $1, ];"
+		],
+		"description": "Declare an array literal variable",
+		"scope": "javascript"
+	},
+	"constArr": {
+		"prefix": [
+			"constArr"
+		],
+		"body": [
+			"const ${1:name} = [ $1, ];"
+		],
+		"description": "Declare an array literal variable",
+		"scope": "javascript"
+	},
+	"letStr": {
+		"prefix": [
+			"letStr"
+		],
+		"body": [
+			"let ${1:name} = '$2';"
+		],
+		"scope": "javascript"
+	},
+	"constStr": {
+		"prefix": [
+			"constStr"
+		],
+		"body": [
+			"const ${1:name} = '$2';"
+		],
+		"scope": "javascript"
+	},
+	"constTrue": {
+		"prefix": [
+			"constTrue"
+		],
+		"body": [
+			"const ${1:name} = true;"
+		],
+		"scope": "javascript"
+	},
+	"letTrue": {
+		"prefix": [
+			"TrueLet"
+		],
+		"body": [
+			"let ${1:name} = true;"
+		],
+		"scope": "javascript"
+	},
+	"letFalse": {
+		"prefix": [
+			"letFalse"
+		],
+		"body": [
+			"let ${1:name} = false;"
+		],
+		"scope": "javascript"
+	},
+	"constFalse": {
+		"prefix": [
+			"constFalse"
+		],
+		"body": [
+			"const ${1:name} = false;"
+		],
+		"scope": "javascript"
+	},
+	"fn": {
+		"prefix": [
+			"fn"
+		],
+		"body": [
+			"function ${1:name} (${2:args}){",
+			"\t$3",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"reFn": {
+		"prefix": [
+			"reFn"
+		],
+		"body": [
+			"function ${1:name} (${2:args}){",
+			"\t$3",
+			"\treturn ${4:returnValue};",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"aFn": {
+		"prefix": [
+			"aFn"
+		],
+		"body": [
+			"(${1:args}) => {",
+			"\t$2",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"reAFn": {
+		"prefix": [
+			"reAFn"
+		],
+		"body": [
+			"(${1:args}) => {",
+			"\t$2",
+			"\treturn ${3:returnValue};",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"asyncFn": {
+		"prefix": [
+			"asyncFn"
+		],
+		"body": [
+			"async function ${1:name} (${2:args}){",
+			"\t$3",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"reAsyncFn": {
+		"prefix": [
+			"reAsyncFn"
+		],
+		"body": [
+			"async function ${1:name} (${2:args}){",
+			"\t$3",
+			"\treturn ${4:returnValue};",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"reAsyncAFn": {
+		"prefix": [
+			"reAsyncAFn"
+		],
+		"body": [
+			"async (${1:args}) => {",
+			"\t$2",
+			"\treturn ${3:returnValue};",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"asyncAwaitAFn": {
+		"prefix": [
+			"asyncAwaitAFn"
+		],
+		"body": [
+			"async (${1:args}){",
+			"\tconst ${2:variable} = await ${3:awaitable};",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"constAFn": {
+		"prefix": [
+			"constAFn"
+		],
+		"body": [
+			"const ${1:name} = (${2:args}) => {",
+			"\t$3",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"reConstAFn": {
+		"prefix": [
+			"reConstAFn"
+		],
+		"body": [
+			"const ${1:name} = (${2:args}) => {",
+			"\t$3",
+			"\treturn ${4:returnValue};",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"constAsyncAFn": {
+		"prefix": [
+			"constAsyncAFn"
+		],
+		"body": [
+			"const ${1:name} = async (${2:args}) => {",
+			"\t$3",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"reConstAsyncAFn": {
+		"prefix": [
+			"reConstAsyncAFn"
+		],
+		"body": [
+			"const ${1:name} = async (${2:args}) => {",
+			"\t$3",
+			"\treturn ${4:returnValue};",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"asyncAwaitFn": {
+		"prefix": [
+			"asyncAwaitFn"
+		],
+		"body": [
+			"async function ${1:name} (${2:args}){",
+			"\tconst ${3:variable} = await ${4:awaitable};",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"constAsyncAwaitAFn": {
+		"prefix": [
+			"constAsyncAwaitAFn"
+		],
+		"body": [
+			"const ${1:name} = async (${2:args}) => {",
+			"\tconst ${3:variable} = await ${4:awaitable};",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"class": {
+		"prefix": [
+			"class"
+		],
+		"body": [
+			"class ${1:name} {",
+			"\tconstructor(${2:args}){",
+			"\t\t$3",
+			"\t}",
+			"\t$4",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"promise": {
+		"prefix": [
+			"promise"
+		],
+		"body": [
+			"new Promise((resolve, reject) => {",
+			"\t",
+			"})"
+		],
+		"scope": "javascript"
+	},
+	"constSet": {
+		"prefix": [
+			"constSet"
+		],
+		"body": [
+			"const ${1:name} = new Set();"
+		],
+		"scope": "javascript"
+	},
+	"constMap": {
+		"prefix": [
+			"constMap"
+		],
+		"body": [
+			"const ${1:name} = new Map();"
+		],
+		"scope": "javascript"
+	},
+	"objDc": {
+		"prefix": [
+			"objDc"
+		],
+		"body": [
+			"const { ${1:var}: ${2:newVar} } = ${3:obj};"
+		],
+		"scope": "javascript"
+	},
+	"deObjDc": {
+		"prefix": [
+			"deObjDc"
+		],
+		"body": [
+			"const { ${1:var}: ${2:newVar} = ${3:aultValue} } = ${4:obj};"
+		],
+		"scope": "javascript"
+	},
+	"arrDc": {
+		"prefix": [
+			"arrDc"
+		],
+		"body": [
+			"const [ ${1:name} ]  = ${2:arr};"
+		],
+		"scope": "javascript"
+	},
+	"deArrDc": {
+		"prefix": [
+			"deArrDc"
+		],
+		"body": [
+			"const [ ${1:name} = ${2:aultValue} ]  = ${3:arr};"
+		],
+		"scope": "javascript"
+	},
+	"try": {
+		"prefix": [
+			"try",
+			"tryCatch"
+		],
+		"body": [
+			"try {",
+			"\t$1",
+			"} catch(e){",
+			"\t$2",
+			"}"
+		],
+		"description": "Declare an object literal variable",
+		"scope": "javascript"
+	},
+	"tryCF": {
+		"prefix": [
+			"tryCF",
+			"tryCatchFinally"
+		],
+		"body": [
+			"try {",
+			"\t$1",
+			"} catch(e) {",
+			"\t$2",
+			"} finally {",
+			"\t$3",
+			"}"
+		],
+		"description": "Declare an object literal variable",
+		"scope": "javascript"
+	},
+	"forI": {
+		"prefix": [
+			"forI",
+			"forIn"
+		],
+		"body": [
+			"for (const ${1:key} in ${2:obj}) {",
+			"\t$3",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"forO": {
+		"prefix": [
+			"forO",
+			"forOf"
+		],
+		"body": [
+			"for (const ${1:item} of ${2:arr}) {",
+			"\t$3",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"for": {
+		"prefix": [
+			"for"
+		],
+		"body": [
+			"for (let ${1:var} = 0; ${2:var} < ${2:limit}; ${3:var}++) {",
+			"\t$3",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"if": {
+		"prefix": [
+			"if"
+		],
+		"body": [
+			"if (${1:condition}) {",
+			"\t$2",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"ifE": {
+		"prefix": [
+			"ifElse",
+			"ifE"
+		],
+		"body": [
+			"if (${1:condition}) {",
+			"\t$2",
+			"} else {",
+			"\t$3",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"ifEI": {
+		"prefix": [
+			"ifEI",
+			"ifElseIf"
+		],
+		"body": [
+			"if (${1:condition1}) {",
+			"\t$2",
+			"} else if (${3:condition2}) {",
+			"\t$3",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"ifEIE": {
+		"prefix": [
+			"ifEIE",
+			"ifElseIfElse"
+		],
+		"body": [
+			"if (${1:condition1}) {",
+			"\t$2",
+			"} else if (${3:condition2}) {",
+			"\t$3",
+			"} else {",
+			"\t$4",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"elseI": {
+		"prefix": [
+			"elseIf",
+			"elseI"
+		],
+		"body": [
+			"else if (${1:condition}) {",
+			"\t$2",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"switch": {
+		"prefix": [
+			"switch"
+		],
+		"body": [
+			"switch (${1:condition}) {",
+			"\tcase ${2:branch}:",
+			"\t\t$3",
+			"\t\tbreak;",
+			"\tault:",
+			"\t\t$4",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"case": {
+		"prefix": [
+			"case"
+		],
+		"body": [
+			"case ${2:branch}:",
+			"\t$3",
+			"\tbreak;"
+		],
+		"scope": "javascript"
+	},
+	"log": {
+		"prefix": [
+			"log"
+		],
+		"body": [
+			"console.log(${1:var});"
+		],
+		"scope": "javascript"
+	},
+	"table": {
+		"prefix": [
+			"table"
+		],
+		"body": [
+			"console.table(${1:var});"
+		],
+		"scope": "javascript"
+	},
+	".then": {
+		"prefix": [
+			".then"
+		],
+		"body": [
+			"${1:promise}",
+			".then((${2:res}) => {",
+			"\t$3",
+			"});"
+		],
+		"scope": "javascript"
+	},
+	".thenC": {
+		"prefix": [
+			".thenCatch",
+			".thenC"
+		],
+		"body": [
+			"${1:promise}",
+			".then((${2:res}) => {",
+			"\t$3",
+			"})",
+			".catch((${4:error}) => {",
+			"\t$5",
+			"});"
+		],
+		"scope": "javascript"
+	},
+	".thenCF": {
+		"prefix": [
+			".thenCatchFinally",
+			".thenCF"
+		],
+		"body": [
+			"${1:promise}",
+			".then((${2:res}) => {",
+			"\t$3",
+			"})",
+			".catch((${4:error}) => {",
+			"\t$5",
+			"})",
+			".finally(() => {",
+			"\t$6",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"import": {
+		"prefix": [
+			"import"
+		],
+		"body": [
+			"import '${1:module}';"
+		],
+		"scope": "javascript"
+	},
+	"importF": {
+		"prefix": [
+			"importF",
+			"importFrom"
+		],
+		"body": [
+			"import ${1:moduleName} from '${2:module}';"
+		],
+		"scope": "javascript"
+	},
+	"importDc": {
+		"prefix": [
+			"importDc"
+		],
+		"body": [
+			"import {${1:moduleName}} from '${2:module}';"
+		],
+		"scope": "javascript"
+	},
+	"importAsDc": {
+		"prefix": [
+			"importAsDc"
+		],
+		"body": [
+			"import {${1:moduleName} as ${2:newModuleName}} from '${3:module}';"
+		],
+		"scope": "javascript"
+	},
+	"importAll": {
+		"prefix": [
+			"importAll"
+		],
+		"body": [
+			"import * as ${1:moduleName} from '${2:module}';"
+		],
+		"scope": "javascript"
+	},
+	"importA": {
+		"prefix": [
+			"importAs",
+			"importA"
+		],
+		"body": [
+			"import ${1:moduleName} as ${2:newModuleName} from '${3:module}';"
+		],
+		"scope": "javascript"
+	},
+	"exportC": {
+		"prefix": [
+			"exportConst",
+			"exportC"
+		],
+		"body": [
+			"export const ${1:name} = ${2:value};"
+		],
+		"scope": "javascript"
+	},
+	"exportD": {
+		"prefix": [
+			"exportDefault",
+			"exportD"
+		],
+		"body": [
+			"export const ${1:name} = ${2:value};"
+		],
+		"scope": "javascript"
+	},
+	"export": {
+		"prefix": [
+			"export"
+		],
+		"body": [
+			"export {",
+			"\t$1",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"exportF": {
+		"prefix": [
+			"exportF",
+			"exportFrom"
+		],
+		"body": [
+			"export * from '${1:moduleName}';"
+		],
+		"scope": "javascript"
+	},
+	"require": {
+		"prefix": [
+			"require"
+		],
+		"body": [
+			"const ${1:moduleName} = require('${2:module}');"
+		],
+		"scope": "javascript"
+	},
+	"requireDc": {
+		"prefix": [
+			"requireDc"
+		],
+		"body": [
+			"const {${1:moduleName}} = require('${2:module}');"
+		],
+		"scope": "javascript"
+	},
+	"requireAsDc": {
+		"prefix": [
+			"requireAsDc"
+		],
+		"body": [
+			"const {${1:moduleName} as ${2:newModuleName}} = require('${3:module}');"
+		],
+		"scope": "javascript"
+	},
+	"module": {
+		"prefix": [
+			"module"
+		],
+		"body": [
+			"module.exports = {",
+			"\t${1:key}: ${2:value}",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	".toFixed": {
+		"prefix": [
+			".toFixed"
+		],
+		"body": [
+			"${1:num}.toFixed"
+		],
+		"scope": "javascript"
+	},
+	".parseInt": {
+		"prefix": [
+			".parseInt"
+		],
+		"body": [
+			"Number.parseInt(${1:num})"
+		],
+		"scope": "javascript"
+	},
+	".parseFloat": {
+		"prefix": [
+			".parseFloat"
+		],
+		"body": [
+			"Number.parseFloat(${1:num})"
+		],
+		"scope": "javascript"
+	},
+	"Number": {
+		"prefix": [
+			"Number"
+		],
+		"body": [
+			"Number(${1:var})"
+		],
+		"scope": "javascript"
+	},
+	"String": {
+		"prefix": [
+			"String"
+		],
+		"body": [
+			"String(${1:var})"
+		],
+		"scope": "javascript"
+	},
+	".toString": {
+		"prefix": [
+			".toString"
+		],
+		"body": [
+			"${1:var}.toString()"
+		],
+		"scope": "javascript"
+	},
+	".valueOf": {
+		"prefix": [
+			".valueOf"
+		],
+		"body": [
+			"${1:var}.valueOf()"
+		],
+		"scope": "javascript"
+	},
+	".startsWith": {
+		"prefix": [
+			".startsWith"
+		],
+		"body": [
+			"${1:str}.startsWith()"
+		],
+		"scope": "javascript"
+	},
+	".endsWith": {
+		"prefix": [
+			".endsWith"
+		],
+		"body": [
+			"${1:str}.endsWith()"
+		],
+		"scope": "javascript"
+	},
+	".padStart": {
+		"prefix": [
+			".padStart"
+		],
+		"body": [
+			"${1:str}.padStart()"
+		],
+		"scope": "javascript"
+	},
+	".padEnd": {
+		"prefix": [
+			".padEnd"
+		],
+		"body": [
+			"${1:str}.padEnd()"
+		],
+		"scope": "javascript"
+	},
+	".slice": {
+		"prefix": [
+			".slice"
+		],
+		"body": [
+			"${1:str}.slice()"
+		],
+		"scope": "javascript"
+	},
+	".split": {
+		"prefix": [
+			".split"
+		],
+		"body": [
+			"${1:str}.split(${2:splitter})"
+		],
+		"scope": "javascript"
+	},
+	".concat": {
+		"prefix": [
+			".concat"
+		],
+		"body": [
+			"${1:str}.concat(${2:splitter})"
+		],
+		"scope": "javascript"
+	},
+	".includes": {
+		"prefix": [
+			".includes"
+		],
+		"body": [
+			"${1:str}.includes(${2:str})"
+		],
+		"scope": "javascript"
+	},
+	".charAt": {
+		"prefix": [
+			".charAt"
+		],
+		"body": [
+			"${1:str}.charAt(${2:char})"
+		],
+		"scope": "javascript"
+	},
+	".charCodeAt": {
+		"prefix": [
+			".charCodeAt"
+		],
+		"body": [
+			"${1:str}.charCodeAt(${2:charCode})"
+		],
+		"scope": "javascript"
+	},
+	".indexOf": {
+		"prefix": [
+			".indexOf"
+		],
+		"body": [
+			"${1:str}.indexOf(${2:char})"
+		],
+		"scope": "javascript"
+	},
+	".lastIndexOf": {
+		"prefix": [
+			".lastIndexOf"
+		],
+		"body": [
+			"${1:str}.lastIndexOf(${2:char})"
+		],
+		"scope": "javascript"
+	},
+	".trim": {
+		"prefix": [
+			".trim"
+		],
+		"body": [
+			"${1:str}.trim()"
+		],
+		"scope": "javascript"
+	},
+	".repeat": {
+		"prefix": [
+			".repeat"
+		],
+		"body": [
+			"${1:str}.repeat()"
+		],
+		"scope": "javascript"
+	},
+	".toLowerCase": {
+		"prefix": [
+			".toLowerCase"
+		],
+		"body": [
+			"${1:str}.toLowerCase()"
+		],
+		"scope": "javascript"
+	},
+	".toUpperCase": {
+		"prefix": [
+			".toUpperCase"
+		],
+		"body": [
+			"${1:str}.toUpperCase()"
+		],
+		"scope": "javascript"
+	},
+	".search": {
+		"prefix": [
+			".search"
+		],
+		"body": [
+			"${1:str}.search(${2:reg})"
+		],
+		"scope": "javascript"
+	},
+	".match": {
+		"prefix": [
+			".match"
+		],
+		"body": [
+			"${1:str}.search(${2:reg})"
+		],
+		"scope": "javascript"
+	},
+	".replace": {
+		"prefix": [
+			".replace"
+		],
+		"body": [
+			"${1:str}.replace(${2:target}, ${3:handler})"
+		],
+		"scope": "javascript"
+	},
+	".now": {
+		"prefix": [
+			".now"
+		],
+		"body": [
+			"Date.now()"
+		],
+		"scope": "javascript"
+	},
+	".getTime": {
+		"prefix": [
+			".getTime"
+		],
+		"body": [
+			"${$1:date}.getTime()"
+		],
+		"scope": "javascript"
+	},
+	".getFullYear": {
+		"prefix": [
+			".getFullYear"
+		],
+		"body": [
+			"${$1:date}.getFullYear()"
+		],
+		"scope": "javascript"
+	},
+	".getMonth": {
+		"prefix": [
+			".getMonth"
+		],
+		"body": [
+			"${$1:date}.getMonth() + 1"
+		],
+		"scope": "javascript"
+	},
+	".getDate": {
+		"prefix": [
+			".getDate"
+		],
+		"body": [
+			"${$1:date}.getDate()"
+		],
+		"scope": "javascript"
+	},
+	".getDay": {
+		"prefix": [
+			".getDay"
+		],
+		"body": [
+			"${$1:date}.getDay()"
+		],
+		"scope": "javascript"
+	},
+	".getHours": {
+		"prefix": [
+			".getHours"
+		],
+		"body": [
+			"${$1:date}.getHours()"
+		],
+		"scope": "javascript"
+	},
+	".getMinutes": {
+		"prefix": [
+			".getMinutes"
+		],
+		"body": [
+			"${$1:date}.getMinutes()"
+		],
+		"scope": "javascript"
+	},
+	".getSeconds": {
+		"prefix": [
+			".getSeconds"
+		],
+		"body": [
+			"${$1:date}.getSeconds()"
+		],
+		"scope": "javascript"
+	},
+	".test": {
+		"prefix": [
+			".test"
+		],
+		"body": [
+			"${$1:reg}.test(${2:str})"
+		],
+		"scope": "javascript"
+	},
+	".exec": {
+		"prefix": [
+			".exec"
+		],
+		"body": [
+			"${$1:reg}.exec(${2:str})"
+		],
+		"scope": "javascript"
+	},
+	".min": {
+		"prefix": [
+			".min"
+		],
+		"body": [
+			"Math.min(${1:nums})"
+		],
+		"scope": "javascript"
+	},
+	".max": {
+		"prefix": [
+			".max"
+		],
+		"body": [
+			"Math.max(${1:nums})"
+		],
+		"scope": "javascript"
+	},
+	".floor": {
+		"prefix": [
+			".floor"
+		],
+		"body": [
+			"Math.floor(${1:num})"
+		],
+		"scope": "javascript"
+	},
+	".ceil": {
+		"prefix": [
+			".ceil"
+		],
+		"body": [
+			"Math.ceil(${1:num})"
+		],
+		"scope": "javascript"
+	},
+	".round": {
+		"prefix": [
+			".round"
+		],
+		"body": [
+			"Math.round(${1:num})"
+		],
+		"scope": "javascript"
+	},
+	".random": {
+		"prefix": [
+			".random"
+		],
+		"body": [
+			"Math.random()"
+		],
+		"scope": "javascript"
+	},
+	".abs": {
+		"prefix": [
+			".abs"
+		],
+		"body": [
+			"Math.abs(${1:num})"
+		],
+		"scope": "javascript"
+	},
+	".pow": {
+		"prefix": [
+			".pow"
+		],
+		"body": [
+			"Math.pow(${1:num}, ${2:power})"
+		],
+		"scope": "javascript"
+	},
+	".assign": {
+		"prefix": [
+			".assign"
+		],
+		"body": [
+			"Object.assign(${1:target}, ${2:source})"
+		],
+		"scope": "javascript"
+	},
+	".freeze": {
+		"prefix": [
+			".freeze"
+		],
+		"body": [
+			"Object.freeze(${1:target})"
+		],
+		"scope": "javascript"
+	},
+	".keys": {
+		"prefix": [
+			".keys"
+		],
+		"body": [
+			"Object.keys(${1:target})"
+		],
+		"scope": "javascript"
+	},
+	".values": {
+		"prefix": [
+			".values"
+		],
+		"body": [
+			"Object.values(${1:target})"
+		],
+		"scope": "javascript"
+	},
+	".entries": {
+		"prefix": [
+			".entries"
+		],
+		"body": [
+			"Object.entries(${1:target})"
+		],
+		"scope": "javascript"
+	},
+	".parse": {
+		"prefix": [
+			".parse"
+		],
+		"body": [
+			"JSON.parse(${1:target})"
+		],
+		"scope": "javascript"
+	},
+	".stringify": {
+		"prefix": [
+			".stringify"
+		],
+		"body": [
+			"JSON.stringify(${1:target})"
+		],
+		"scope": "javascript"
+	},
+	"delete": {
+		"prefix": [
+			"delete"
+		],
+		"body": [
+			"delete ${1:prop}"
+		],
+		"scope": "javascript"
+	},
+	"typeof": {
+		"prefix": [
+			"typeof"
+		],
+		"body": [
+			"typeof ${1:var}"
+		],
+		"scope": "javascript"
+	},
+	"instanceof": {
+		"prefix": [
+			"instanceof"
+		],
+		"body": [
+			"${1:var} instanceof ${1:constructor}"
+		],
+		"scope": "javascript"
+	},
+	".getPrototypeOf": {
+		"prefix": [
+			".getPrototypeOf"
+		],
+		"body": [
+			"Object.getPrototypeOf(${1:target})"
+		],
+		"scope": "javascript"
+	},
+	".isPrototypeOf": {
+		"prefix": [
+			".isPrototypeOf"
+		],
+		"body": [
+			"${1:target}.isPrototypeOf(${1:source})"
+		],
+		"scope": "javascript"
+	},
+	".from": {
+		"prefix": [
+			".from"
+		],
+		"body": [
+			"Array.from(${1:nums})"
+		],
+		"scope": "javascript"
+	},
+	".of": {
+		"prefix": [
+			".of"
+		],
+		"body": [
+			"Array.of(${1:arrayLike})"
+		],
+		"scope": "javascript"
+	},
+	".push": {
+		"prefix": [
+			".push"
+		],
+		"body": [
+			"${1:target}.push(${2:item})"
+		],
+		"scope": "javascript"
+	},
+	".pop": {
+		"prefix": [
+			".pop"
+		],
+		"body": [
+			"${1:target}.pop(${2:item})"
+		],
+		"scope": "javascript"
+	},
+	".shift": {
+		"prefix": [
+			".shift"
+		],
+		"body": [
+			"${1:target}.shift(${2:item})"
+		],
+		"scope": "javascript"
+	},
+	".unshift": {
+		"prefix": [
+			".unshift"
+		],
+		"body": [
+			"${1:target}.unshift(${2:item})"
+		],
+		"scope": "javascript"
+	},
+	".splice": {
+		"prefix": [
+			".splice"
+		],
+		"body": [
+			"${1:target}.splice(${1:start}, ${2:index})"
+		],
+		"scope": "javascript"
+	},
+	".fill": {
+		"prefix": [
+			".fill"
+		],
+		"body": [
+			"${1:target}.fill(${1:item})"
+		],
+		"scope": "javascript"
+	},
+	".join": {
+		"prefix": [
+			".join"
+		],
+		"body": [
+			"${1:target}.join(${2:splitter})"
+		],
+		"scope": "javascript"
+	},
+	".reverse": {
+		"prefix": [
+			".reverse"
+		],
+		"body": [
+			"${1:target}.reverse()"
+		],
+		"scope": "javascript"
+	},
+	".sort": {
+		"prefix": [
+			".sort"
+		],
+		"body": [
+			"${1:target}.sort(${2:fn})"
+		],
+		"scope": "javascript"
+	},
+	".find": {
+		"prefix": [
+			".find"
+		],
+		"body": [
+			"${1:target}.find((${2:item}, ${3:indedx}, ${4:arr}) => {",
+			"\t$5",
+			"\treturn $6;",
+			"})"
+		],
+		"scope": "javascript"
+	},
+	".findIndex": {
+		"prefix": [
+			".findIndex"
+		],
+		"body": [
+			"${1:target}.findIndex((${2:item}, ${3:indedx}, ${4:arr}) => {",
+			"\t$5",
+			"\treturn $6;",
+			"})"
+		],
+		"scope": "javascript"
+	},
+	".every": {
+		"prefix": [
+			".every"
+		],
+		"body": [
+			"${1:target}.every((${2:item}, ${3:indedx}, ${4:arr}) => {",
+			"\t$5",
+			"\treturn $6;",
+			"})"
+		],
+		"scope": "javascript"
+	},
+	".some": {
+		"prefix": [
+			".some"
+		],
+		"body": [
+			"${1:target}.some((${2:item}, ${3:indedx}, ${4:arr}) => {",
+			"\t$5",
+			"\treturn $6;",
+			"})"
+		],
+		"scope": "javascript"
+	},
+	".filter": {
+		"prefix": [
+			".filter"
+		],
+		"body": [
+			"${1:target}.filter((${2:item}, ${3:indedx}, ${4:arr}) => {",
+			"\t$5",
+			"\treturn $6;",
+			"})"
+		],
+		"scope": "javascript"
+	},
+	".map": {
+		"prefix": [
+			".map"
+		],
+		"body": [
+			"${1:target}.map((${2:item}, ${3:indedx}, ${4:arr}) => {",
+			"\t$5",
+			"\treturn $6;",
+			"})"
+		],
+		"scope": "javascript"
+	},
+	".forEach": {
+		"prefix": [
+			".forEach"
+		],
+		"body": [
+			"${1:target}.forEach((${2:item}, ${3:indedx}, ${4:arr}) => {",
+			"\t$5",
+			"})"
+		],
+		"scope": "javascript"
+	},
+	".length": {
+		"prefix": [
+			".length"
+		],
+		"body": [
+			"${1:var}.length"
+		],
+		"scope": "javascript"
+	},
+	".size": {
+		"prefix": [
+			".size"
+		],
+		"body": [
+			"${1:var}.size"
+		],
+		"scope": "javascript"
+	},
+	".add": {
+		"prefix": [
+			".add"
+		],
+		"body": [
+			"${1:target}.add(${2:item})"
+		],
+		"scope": "javascript"
+	},
+	".set": {
+		"prefix": [
+			".add"
+		],
+		"body": [
+			"${1:target}.set(${2:key}, ${3:value})"
+		],
+		"scope": "javascript"
+	},
+	".get": {
+		"prefix": [
+			".get"
+		],
+		"body": [
+			"${1:target}.get(${2:key})"
+		],
+		"scope": "javascript"
+	},
+	".has": {
+		"prefix": [
+			".has"
+		],
+		"body": [
+			"${1:target}.has(${2:item})"
+		],
+		"scope": "javascript"
+	},
+	".delete": {
+		"prefix": [
+			".delete"
+		],
+		"body": [
+			"${1:target}.delete(${2:key})"
+		],
+		"scope": "javascript"
+	},
+	".clear": {
+		"prefix": [
+			".clear"
+		],
+		"body": [
+			"${1:target}.clear()"
+		],
+		"scope": "javascript"
+	},
+	"v2fnDef": {
+		"prefix": [
+			"v2fn"
+		],
+		"body": [
+			"${1:fnName} (${2:args}){",
+			"\t$3",
+			"},"
+		],
+		"scope": "javascript"
+	},
+	"v2fnUse": {
+		"prefix": [
+			"v2fnUse"
+		],
+		"body": [
+			"this.${1:fnName}();"
+		],
+		"scope": "javascript"
+	},
+	"v2fnUseWithArgs": {
+		"prefix": [
+			"v2fnUse"
+		],
+		"body": [
+			"this.${1:fnName}(${2:args});"
+		],
+		"scope": "javascript"
+	},
+	"v2propDef": {
+		"prefix": [
+			"v2propDef"
+		],
+		"body": [
+			"${1:key}: ${2:value},"
+		],
+		"scope": "javascript"
+	},
+	"v2propUse": {
+		"prefix": [
+			"v2propUse"
+		],
+		"body": [
+			"this.${1:propName}"
+		],
+		"scope": "javascript"
+	},
+	"v2fnAsync": {
+		"prefix": [
+			"v2fnAsync"
+		],
+		"body": [
+			"async ${1:fnName} (${2:args}){",
+			"\t$2",
+			"},"
+		],
+		"scope": "javascript"
+	},
+	"v2data": {
+		"prefix": [
+			"v2data"
+		],
+		"body": [
+			"data(){",
+			"\t${1:key}: ${2:value},",
+			"},"
+		],
+		"scope": "javascript"
+	},
+	"v2computed": {
+		"prefix": [
+			"v2computed"
+		],
+		"body": [
+			"computed: {",
+			"\t${1:propName}() {",
+			"\t\treturn ${2:returnValue}",
+			"\t},",
+			"},"
+		],
+		"scope": "javascript"
+	},
+	"v2computedWithGetter": {
+		"prefix": [
+			"v2computedWithGetter"
+		],
+		"body": [
+			"${1:propName}: {",
+			"\tgetter(){",
+			"\t\treturn ${2:value}",
+			"\t},",
+			"\tsetter(${3:newValue}){",
+			"\t\t$4",
+			"\t},",
+			"},"
+		],
+		"scope": "javascript"
+	},
+	"v2watch": {
+		"v2watch": [
+			"v2watch"
+		],
+		"body": [
+			"watch: {",
+			"\t${1:propName}(${2:newValue}) {",
+			"\t\t$3",
+			"\t},",
+			"},"
+		],
+		"scope": "javascript"
+	},
+	"v2watchWithAllOptions": {
+		"prefix": [
+			"v2watchWithAllOptions"
+		],
+		"body": [
+			"${1:propName}: {",
+			"\thandler(){",
+			"\t\t$2",
+			"\t},",
+			"\timmediate: true,",
+			"\tdeep: true",
+			"},"
+		],
+		"scope": "javascript"
+	},
+	"v2watchWithImmediate": {
+		"prefix": [
+			"v2watchWithImmediate"
+		],
+		"body": [
+			"${1:propName}: {",
+			"\thandler(${2:newValue}){",
+			"\t\t$3",
+			"\t},",
+			"\timmediate: true,",
+			"},"
+		],
+		"scope": "javascript"
+	},
+	"v2watchWithDeep": {
+		"prefix": [
+			"v2watchWithDeep"
+		],
+		"body": [
+			"${1:propName}: {",
+			"\thandler(${2:newValue}){",
+			"\t\t$3",
+			"\t},",
+			"\tdeep: true,",
+			"},"
+		],
+		"scope": "javascript"
+	},
+	"v2watchAsync": {
+		"prefix": [
+			"v2watchAsync"
+		],
+		"body": [
+			"watch: {",
+			"\tasync ${1:propName}(${2:newValue}) {",
+			"\t\t$3",
+			"\t},",
+			","
+		],
+		"scope": "javascript"
+	},
+	"v2watchAsyncWithAllOptions": {
+		"prefix": [
+			"v2watchAsyncWithAllOptions"
+		],
+		"body": [
+			"${1:propName}: {",
+			"\tasync handler(${2:newValue}){",
+			"\t\t$3",
+			"\t},",
+			"\timmediate: true,",
+			"\tdeep: true",
+			"},"
+		],
+		"scope": "javascript"
+	},
+	"v2watchAsyncWithDeep": {
+		"prefix": [
+			"v2watchAsyncWithDeep"
+		],
+		"body": [
+			"${1:propName}: {",
+			"\tasync handler(${2:newValue}){",
+			"\t\t$3",
+			"\t},",
+			"\tdeep: true,",
+			"},"
+		],
+		"scope": "javascript"
+	},
+	"v2watchAsyncWithImmediate": {
+		"prefix": [
+			"v2watchAsyncWithImmediate"
+		],
+		"body": [
+			"${1:propName}: {",
+			"\tasync handler(${2:newValue}){",
+			"\t\t$3",
+			"\t},",
+			"\timmediate: true,",
+			"},"
+		],
+		"scope": "javascript"
+	},
+	"v2methods": {
+		"prefix": [
+			"v2methods"
+		],
+		"body": [
+			"methods: {",
+			"\t${1:methodName}() {",
+			"\t\t$2",
+			"\t},",
+			"},"
+		],
+		"scope": "javascript"
+	},
+	"v2components": {
+		"prefix": [
+			"v2components"
+		],
+		"body": [
+			"components: {",
+			"\t$1",
+			"},"
+		],
+		"scope": "javascript"
+	},
+	"v2props": {
+		"prefix": [
+			"v2props"
+		],
+		"body": [
+			"props: {",
+			"\t${1:propName}: {",
+			"\t\ttype: ${2:propType}",
+			"\t\tault: ${3:propDefault}",
+			"\t}",
+			"},"
+		],
+		"scope": "javascript"
+	},
+	"v2propsDef": {
+		"prefix": [
+			"v2propsDef"
+		],
+		"body": [
+			"${1:propName}: {",
+			"\ttype: ${2:propType},",
+			"\tault: ${3:propDefault},",
+			"},"
+		],
+		"scope": "javascript"
+	},
+	"v2emits": {
+		"prefix": [
+			"v2emits"
+		],
+		"body": [
+			"emits: ['$1'],"
+		],
+		"scope": "javascript"
+	},
+	"v2beforeCreate": {
+		"prefix": [
+			"v2beforeCreate"
+		],
+		"body": [
+			"beforeCreate() {",
+			"\t$2",
+			"},"
+		],
+		"scope": "javascript"
+	},
+	"v2created": {
+		"prefix": [
+			"v2created"
+		],
+		"body": [
+			"created() {",
+			"\t$2",
+			"},"
+		],
+		"scope": "javascript"
+	},
+	"v2beforeMount": {
+		"prefix": [
+			"v2beforeMount"
+		],
+		"body": [
+			"beforeMount() {",
+			"\t$2",
+			"},"
+		],
+		"scope": "javascript"
+	},
+	"v2mounted": {
+		"prefix": [
+			"v2mounted"
+		],
+		"body": [
+			"mounted() {",
+			"\t$2",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"v2beforeUpdate": {
+		"prefix": [
+			"v2beforeUpdate"
+		],
+		"body": [
+			"beforeUpdate() {",
+			"\t$2",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"v2updated": {
+		"prefix": [
+			"v2updated"
+		],
+		"body": [
+			"updated() {",
+			"\t$2",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"v2activated": {
+		"prefix": [
+			"v2activated"
+		],
+		"body": [
+			"activated() {",
+			"\t$2",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"v2deactivated": {
+		"prefix": [
+			"v2deactivated"
+		],
+		"body": [
+			"deactivated() {",
+			"\t$2",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"v2beforeDestroy": {
+		"prefix": [
+			"v2beforeDestroy"
+		],
+		"body": [
+			"beforeDestroy() {",
+			"\t$2",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"v2destroyed": {
+		"prefix": [
+			"v2destroyed"
+		],
+		"body": [
+			"destroyed() {",
+			"\t$2",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"v2errorCaptured": {
+		"pv2refix": [
+			"v2errorCaptured"
+		],
+		"body": [
+			"errorCaptured() {",
+			"\t$2",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"v2directives": {
+		"prefix": [
+			"v2directives"
+		],
+		"body": [
+			"directives: {",
+			"\t$2",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"v2directiveBind": {
+		"prefix": [
+			"v2directiveBind"
+		],
+		"body": [
+			"bind(el, binding) {",
+			"\t$2",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"v2directiveInserted": {
+		"prefix": [
+			"v2directiveInserted"
+		],
+		"body": [
+			"inserted(el, binding) {",
+			"\t$2",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"v2directiveUpdate": {
+		"prefix": [
+			"v2directiveUpdate"
+		],
+		"body": [
+			"update(el, binding) {",
+			"\t$2",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"v2directiveComponentUpdated": {
+		"prefix": [
+			"v2directiveComponentUpdated"
+		],
+		"body": [
+			"componentUpdated(el, binding) {",
+			"\t$2",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"v2directiveUnbind": {
+		"prefix": [
+			"v2directiveUnbind"
+		],
+		"body": [
+			"unbind(el, binding) {",
+			"\t$2",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"v2directiveUse": {
+		"prefix": [
+			"v2directiveUse"
+		],
+		"body": [
+			"v-${1:directiveName}:${2:bindingValue}=\"${3:args}\""
+		],
+		"scope": "vue"
+	},
+	"v2filters": {
+		"prefix": [
+			"v2filters"
+		],
+		"body": [
+			"filters: {",
+			"\t$2",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"v2refs": {
+		"prefix": [
+			"v2refs"
+		],
+		"body": [
+			"this.\\$refs.${1:refName}"
+		],
+		"scope": "javascript"
+	},
+	"v2parent": {
+		"prefix": [
+			"v2parent"
+		],
+		"body": [
+			"this.\\$parent.${1:el}"
+		],
+		"scope": "javascript"
+	},
+	"v2set": {
+		"prefix": [
+			"v2set"
+		],
+		"body": [
+			"this.\\$set(${1:object}, ${2:key}, ${3:value})"
+		],
+		"scope": "javascript"
+	},
+	"v2forUpdate": {
+		"prefix": [
+			"v2forUpdate"
+		],
+		"body": [
+			"this.\\$forUpdate();"
+		],
+		"scope": "javascript"
+	},
+	"v2nextTick": {
+		"prefix": [
+			"v2nextTick"
+		],
+		"body": [
+			"this.\\$nextTick(() => {",
+			"\t$1",
+			"});"
+		],
+		"scope": "javascript"
+	},
+	"v2emit": {
+		"prefix": [
+			"v2emit"
+		],
+		"body": [
+			"this.\\$emit('$1', $2)"
+		],
+		"scope": "javascript"
+	},
+	"v2el": {
+		"prefix": [
+			"v2el"
+		],
+		"body": [
+			"this.\\$el"
+		],
+		"scope": "javascript"
+	},
+	"v3createApp": {
+		"prefix": [
+			"v3createApp"
+		],
+		"body": [
+			"createApp()"
+		],
+		"scope": "javascript"
+	},
+	"v3use": {
+		"prefix": [
+			"v3use"
+		],
+		"body": [
+			"app.use(${1:component})"
+		],
+		"scope": "javascript"
+	},
+	"v3component": {
+		"prefix": [
+			"v3component"
+		],
+		"body": [
+			"app.component();"
+		],
+		"scope": "javascript"
+	},
+	"v3config": {
+		"prefix": [
+			"v3config"
+		],
+		"body": [
+			"app.config"
+		],
+		"scope": "javascript"
+	},
+	"v3errorHandler": {
+		"prefix": [
+			"v3errorHandler"
+		],
+		"body": [
+			"app.config.errorHandler = () => {",
+			"\t$1",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"v3warnHandler": {
+		"prefix": [
+			"v3warnHandler"
+		],
+		"body": [
+			"app.config.warnHandler = () => {",
+			"\t$1",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"v3globalProperties": {
+		"prefix": [
+			"v3globalProperties"
+		],
+		"body": [
+			"app.config.v3globalProperties = {",
+			"\t${1:key}: ${2:value}",
+			"};"
+		],
+		"scope": "javascript"
+	},
+	"v3nextTick": {
+		"prefix": [
+			"v3nextTick"
+		],
+		"body": [
+			"nextTick(() => {",
+			"\t${1}",
+			"})"
+		],
+		"scope": "javascript"
+	},
+	"v3defineConponent": {
+		"prefix": [
+			"v3defineConponent"
+		],
+		"body": [
+			"defineConponent({",
+			"\tname: ${1:name}",
+			"\tprops: {",
+			"\t\t${2:key}: ${3:value},",
+			"\t},",
+			"\temits: [${4:eventName}],",
+			"\tsetup(props, { emit, }){",
+			"\t\t$5",
+			"\t},",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"v3defineAsyncConponent": {
+		"prefix": [
+			"v3defineAsyncConponent"
+		],
+		"body": [
+			"defineAsyncConponent({",
+			"\tname: ${1:name}",
+			"\tprops: {",
+			"\t\t${2:key}: ${3:value},",
+			"\t},",
+			"\temits: [${4:eventName}],",
+			"\tsetup(props, { emit, }){",
+			"\t\t$5",
+			"\t},",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"v3defineCustomElement": {
+		"prefix": [
+			"v3defineCustomElement"
+		],
+		"body": [
+			"app.defineCustomElement({ ${1:key}: ${2:value} });"
+		],
+		"scope": "javascript"
+	},
+	"v3defineProps": {
+		"prefix": [
+			"v3defineProps"
+		],
+		"body": [
+			"const props = defineProps({",
+			"\t${1:propName}: {",
+			"\t\ttype: ${2:type},",
+			"\t\tdefault: ${3:defaultValue},",
+			"\t},",
+			"}"
+		],
+		"scope": "javascript"
+	},
+	"v3defineEmits": {
+		"prefix": [
+			"v3defineEmits"
+		],
+		"body": [
+			"const emits = defineEmits([ '${1:eventName}' ]);"
+		],
+		"scope": "javascript"
+	},
+	"v3defineModel": {
+		"prefix": [
+			"v3defineModel"
+		],
+		"body": [
+			"const ${1:model} = defineModel('${2:modelName}', { ${3} });"
+		],
+		"scope": "javascript"
+	},
+	"v3defineExpose": {
+		"prefix": [
+			"v3defineExpose"
+		],
+		"body": [
+			"defineExpose({",
+			"\t${1:name}: ${2:value},",
+			"});"
+		],
+		"scope": "javascript"
+	},
+	"v3defineOptions": {
+		"prefix": [
+			"v3defineOptions"
+		],
+		"body": [
+			"defineOptions({",
+			"\t${1:name}: ${2:value},",
+			"});"
+		],
+		"scope": "javascript"
+	},
+	"v3defineSlots": {
+		"prefix": [
+			"v3defineSlots"
+		],
+		"body": [
+			"const slots = defineSlots();"
+		],
+		"scope": "javascript"
+	},
+	"v3useSlots": {
+		"prefix": [
+			"v3useSlots"
+		],
+		"body": [
+			"const slots = useSlots();"
+		],
+		"scope": "javascript"
+	},
+	"v3useAttrs": {
+		"prefix": [
+			"v3useAttrs"
+		],
+		"body": [
+			"const attrs = useAttrs();"
+		],
+		"scope": "javascript"
+	},
+	"v3useCssModule": {
+		"prefix": [
+			"v3useCssModule"
+		],
+		"body": [
+			"const cssModule = useCssModule();"
+		],
+		"scope": "javascript"
+	},
+	"v3refDef": {
+		"prefix": [
+			"v3refDef"
+		],
+		"body": [
+			"const ${1:varName} = ref(${2:defaultValue});"
+		],
+		"scope": "javascript"
+	},
+	"v3refUse": {
+		"prefix": [
+			"v3refUse"
+		],
+		"body": [
+			"${1:varName}.value"
+		],
+		"scope": "javascript"
+	}
+}

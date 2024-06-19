@@ -1,8 +1,10 @@
 {
-    "name": "lania-snippets",
-    "displayName": "lania-snippets",
+    "name": "lan-snippets",
+    "displayName": "lan-snippets",
     "description": "snippets",
-    "version": "0.0.1",
+    "icon": "",
+    "version": "0.0.2",
+    "publisher": "huangpuqiushi",
     "engines": {
         "vscode": "^1.90.0"
     },
@@ -21,6 +23,5 @@
                 "path": "./src/vue/index.snippets.json"
             }
         ]
-    },
-    "icon": ""
+    }
 }

@@ -429,7 +429,7 @@
 			"deObjDc"
 		],
 		"body": [
-			"const { ${1:var}: ${2:newVar} = ${3:aultValue} } = ${4:obj};"
+			"const { ${1:var}: ${2:newVar} = ${3:defaultValue} } = ${4:obj};"
 		],
 		"scope": "javascript"
 	},
@@ -447,7 +447,7 @@
 			"deArrDc"
 		],
 		"body": [
-			"const [ ${1:name} = ${2:aultValue} ]  = ${3:arr};"
+			"const [ ${1:name} = ${2:defaultValue} ]  = ${3:arr};"
 		],
 		"scope": "javascript"
 	},
@@ -594,7 +594,7 @@
 			"\tcase ${2:branch}:",
 			"\t\t$3",
 			"\t\tbreak;",
-			"\tault:",
+			"\tdefault:",
 			"\t\t$4",
 			"}"
 		],
@@ -1428,7 +1428,7 @@
 			".find"
 		],
 		"body": [
-			"${1:target}.find((${2:item}, ${3:indedx}, ${4:arr}) => {",
+			"${1:target}.find((${2:item}, ${3:index}, ${4:arr}) => {",
 			"\t$5",
 			"\treturn $6;",
 			"})"
@@ -1440,7 +1440,7 @@
 			".findIndex"
 		],
 		"body": [
-			"${1:target}.findIndex((${2:item}, ${3:indedx}, ${4:arr}) => {",
+			"${1:target}.findIndex((${2:item}, ${3:index}, ${4:arr}) => {",
 			"\t$5",
 			"\treturn $6;",
 			"})"
@@ -1452,7 +1452,7 @@
 			".every"
 		],
 		"body": [
-			"${1:target}.every((${2:item}, ${3:indedx}, ${4:arr}) => {",
+			"${1:target}.every((${2:item}, ${3:index}, ${4:arr}) => {",
 			"\t$5",
 			"\treturn $6;",
 			"})"
@@ -1464,7 +1464,7 @@
 			".some"
 		],
 		"body": [
-			"${1:target}.some((${2:item}, ${3:indedx}, ${4:arr}) => {",
+			"${1:target}.some((${2:item}, ${3:index}, ${4:arr}) => {",
 			"\t$5",
 			"\treturn $6;",
 			"})"
@@ -1476,7 +1476,7 @@
 			".filter"
 		],
 		"body": [
-			"${1:target}.filter((${2:item}, ${3:indedx}, ${4:arr}) => {",
+			"${1:target}.filter((${2:item}, ${3:index}, ${4:arr}) => {",
 			"\t$5",
 			"\treturn $6;",
 			"})"
@@ -1488,7 +1488,7 @@
 			".map"
 		],
 		"body": [
-			"${1:target}.map((${2:item}, ${3:indedx}, ${4:arr}) => {",
+			"${1:target}.map((${2:item}, ${3:index}, ${4:arr}) => {",
 			"\t$5",
 			"\treturn $6;",
 			"})"
@@ -1500,7 +1500,7 @@
 			".forEach"
 		],
 		"body": [
-			"${1:target}.forEach((${2:item}, ${3:indedx}, ${4:arr}) => {",
+			"${1:target}.forEach((${2:item}, ${3:index}, ${4:arr}) => {",
 			"\t$5",
 			"})"
 		],
@@ -1677,7 +1677,7 @@
 		"scope": "javascript"
 	},
 	"v2watch": {
-		"v2watch": [
+		"prefix": [
 			"v2watch"
 		],
 		"body": [
@@ -1820,7 +1820,7 @@
 			"props: {",
 			"\t${1:propName}: {",
 			"\t\ttype: ${2:propType}",
-			"\t\tault: ${3:propDefault}",
+			"\t\tdefault: ${3:propDefault}",
 			"\t}",
 			"},"
 		],
@@ -1833,7 +1833,7 @@
 		"body": [
 			"${1:propName}: {",
 			"\ttype: ${2:propType},",
-			"\tault: ${3:propDefault},",
+			"\ttdefault: ${3:propDefault},",
 			"},"
 		],
 		"scope": "javascript"
@@ -2199,12 +2199,12 @@
 		],
 		"scope": "javascript"
 	},
-	"v3defineConponent": {
+	"v3defineComponent": {
 		"prefix": [
-			"v3defineConponent"
+			"v3defineComponent"
 		],
 		"body": [
-			"defineConponent({",
+			"defineComponent({",
 			"\tname: ${1:name}",
 			"\tprops: {",
 			"\t\t${2:key}: ${3:value},",
@@ -2217,12 +2217,12 @@
 		],
 		"scope": "javascript"
 	},
-	"v3defineAsyncConponent": {
+	"v3defineAsyncComponent": {
 		"prefix": [
-			"v3defineAsyncConponent"
+			"v3defineAsyncComponent"
 		],
 		"body": [
-			"defineAsyncConponent({",
+			"defineAsyncComponent({",
 			"\tname: ${1:name}",
 			"\tprops: {",
 			"\t\t${2:key}: ${3:value},",

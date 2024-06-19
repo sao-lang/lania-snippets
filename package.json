@@ -3,7 +3,7 @@
     "displayName": "lan-snippets",
     "description": "snippets",
     "icon": "",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "publisher": "huangpuqiushi",
     "engines": {
         "vscode": "^1.90.0"

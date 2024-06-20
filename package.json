@@ -3,7 +3,7 @@
     "displayName": "lan-snippets",
     "description": "snippets",
     "icon": "",
-    "version": "0.0.3",
+    "version": "0.1.0",
     "publisher": "huangpuqiushi",
     "engines": {
         "vscode": "^1.90.0"
@@ -21,6 +21,14 @@
             {
                 "language": "vue",
                 "path": "./src/vue/index.snippets.json"
+            },
+            {
+                "language": "vue",
+                "path": "./src/vue/init.snippets.json"
+            },
+            {
+                "language": "javascriptreact",
+                "path": "./src/react/index.snippets.json"
             }
         ]
     }

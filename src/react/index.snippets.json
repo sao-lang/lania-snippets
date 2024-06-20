@@ -1,0 +1,47 @@
+{
+    "rcc": {
+        "prefix": ["rcc"],
+        "body": [
+            "export default class extends React.Component {",
+            "\tconstructor(props) {",
+            "\t\tsuper(props);",
+            "\t}",
+            "\trender(props) {",
+            "\t\treturn <div></div>",
+            "\t}",
+            "\tcomponentDidMount() {}",
+            "}"
+        ],
+        "scope": "javascriptreact"
+    },
+    "rfc": {
+        "prefix": ["rfc"],
+        "body": ["export default function (props) {", "\treturn <div></div>", "}"],
+        "scope": "javascriptreact"
+    },
+    "rTagProp": {
+        "prefix": ["rTagProp"],
+        "body": ["${1:propName}=\"${2:value}\""],
+        "scope": "javascriptreact"
+    },
+    "rBind": {
+        "prefix": ["rBind"],
+        "body": ["${1:propName}={${2:value}}"],
+        "scope": "javascriptreact"
+    },
+    "rBindClass": {
+        "prefix": ["rBindClass"],
+        "body": ["className={${2:value}}"],
+        "scope": "javascriptreact"
+    },
+    "className": {
+        "prefix": ["className"],
+        "body": ["className=\"${1:className}\""],
+        "scope": "javascriptreact"
+    },
+    "rBindStyle": {
+        "prefix": ["rBindStyle"],
+        "body": ["style={${1:key}: ${1: value}}"],
+        "scope": "javascriptreact"
+    }
+}
